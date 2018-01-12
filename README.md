@@ -1,7 +1,7 @@
 # CollectionSynchronizer
-**GarbageDisposal** is a Java library for synchronizing Collections with a backend service, preserving the Identity Hashcode of the original entries. 
+**CollectionSynchronizer** is a Java library for synchronizing Collections with a backend service, preserving the Identity Hashcode of the original entries. 
 
-This library uses the [decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern) to *decorate* an object, wrapping the specified callback in a RunnableCloseable.
+This library uses the [decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern) to *decorate* a Collection, keeping it up to date with a backend service (Represented as a Supplier<Collection<T>>), and using reflection to set the fields - thus preserving the Identity Hashcode of the objects, assisting with binding to UI frameworks.
 
 ## Usage Examples
 
